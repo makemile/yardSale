@@ -1,0 +1,118 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --very--light--pink: #c7c7c7;
+    --text--input--field: #f7f7f7;
+    --hospital--green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.product-detail{
+    width: 360px;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    /* margin: 24px 24px 0px 24px; */
+    position: absolute;
+    right: 0;
+}
+
+.product-detail-close{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    padding: 12px;
+}
+.product-detail-close:hover{
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+.product-detail-close img{
+    position: absolute;
+    right: 7px;
+    top: 7.5px;
+}
+
+.product-detail > img:nth-child(2){
+width: 360px;
+height: 360px;
+object-fit: cover;
+border-radius: 0px 0px 20px 20px;
+}
+.primary-button {
+    background-color: var(--hospital--green);
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    color: var(--withe);
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
+
+.add-to-card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text--input--field);
+}
+
+.product-detail p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-bottom: 4px;
+}
+
+.product-detail p:nth-child(2){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-bottom: 36px;
+    color: var(--very--light--pink);
+}
+
+.product-detail p:nth-child(3){
+    font-weight: bold;
+    font-size: var(--sm);
+    margin-bottom: 36px;
+    color: var(--very--light--pink);
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: var(--very-light-pink);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dots span:nth-child(1) {
+    background-color: var(--hospital-green);
+}
+
+@media(max-width:640px){
+    .product-detail{
+        width: 100%;
+    }
+}
